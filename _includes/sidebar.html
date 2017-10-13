@@ -1,0 +1,25 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="{{site.url}}"><img src="{{site.baseurl}}/public/img/logo.png" alt="Logo of the website"></a>
+      <p>Test automation, QA, Dev/TestOps <br>- by Michał Krzyżanowski</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="{{ site.url }}">Blog</a>
+      <a class="sidebar-nav-item{% if page.url == "/tags/" %} active{% endif %}" href="{{ site.url }}/tags/">Tags</a>
+      <a class="sidebar-nav-item{% if page.url == "/contact/" %} active{% endif %}" href="{{ site.url }}/contact/">Contact</a>
+      <a class="sidebar-nav-item{% if page.url == "/about/" %} active{% endif %}" href="{{ site.url }}/about/">About</a>
+
+      <div class="sidebar-social">
+        <a class="sidebar-social-icon" href="{{ site.author.twitter }}" aria-label="Link to author's Twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        <a class="sidebar-social-icon" href="{{ site.author.github }}" aria-label="Link to author's Github"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a class="sidebar-social-icon" href="{{ site.author.linkedin }}" aria-label="Link to author's LinkedIn"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+
+    <div class="copyright">
+      <p>&copy; {{ site.time | date: '%Y' }} Automating Guy | Theme: <a href="https://github.com/poole/hyde">Poole</a></p>
+    </div>
+  </div>
+</div>

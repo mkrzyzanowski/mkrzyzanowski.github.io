@@ -1,0 +1,15 @@
+<div class="contact-form">
+    <form id="contact-form" action="https://formcarry.com/s/rkqYKGYiZ" method="POST" accept-charset="UTF-8">
+        <label for="contact-name">Your name (required)</label>
+        <input type="text" name="name" id="contact-name" required oninvalid="this.setCustomValidity('Enter your name')" oninput="setCustomValidity('')">
+        <label for="contact-email">Your email (required)</label>
+        <input type="email" name="email" id="contact-email" required oninvalid="this.setCustomValidity('Enter a valid email')" oninput="setCustomValidity('')">
+        <label for="contact-subject">Subject</label>
+        <input type="text" name="subject" id="contact-subject" required>
+        <label for="contact-message">Your message</label>
+        <textarea name="message" cols="40" rows="10" id="contact-message" required></textarea>
+        <div id='recaptcha' class="g-recaptcha" data-sitekey="{{ site.recaptcha }}" data-callback="onCompleted" data-size="invisible"></div>
+        <button id="submit-button" type="submit">Send</button>
+        <script>onload();</script>
+    </form>
+</div>

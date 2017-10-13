@@ -1,0 +1,61 @@
+<head>
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3">
+
+  <title>
+    {% if page.title == "Blog" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,Open+Sans">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-57.png" sizes="57x57">
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-76.png" sizes="76x76">
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-96.png" sizes="96x96">
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-128.png" sizes="128x128">
+  <link rel="icon" href="{{site.baseurl}}/public/img/favicon-228.png" sizes="228x228">
+  <link rel="shortcut icon" sizes="196x196" href="{{site.baseurl}}/public/img/favicon-196.png">
+  <link rel="apple-touch-icon" href="{{site.baseurl}}/public/img/favicon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon"  href="{{site.baseurl}}/public/img/favicon-152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="{{site.baseurl}}/public/img/favicon-180.png" sizes="180x180">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="{{site.baseurl}}/public/img/favicon-144.png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  {% if page.title=="Contact" %}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onload() {
+      document.getElementById('contact-form').addEventListener('submit', onSubmit);
+    }
+
+    function onSubmit(token) {
+      event.preventDefault();
+      grecaptcha.execute();
+    }
+    
+    function onCompleted() {
+      document.getElementById("contact-form").submit();
+    }
+  </script>
+  {% endif %}
+
+  {% include cookie.html %}
+</head>

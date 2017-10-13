@@ -1,0 +1,6 @@
+{% assign img_full = include.img %}
+{% assign img_thumbnail = img_full | replace: ".","-thumb."%}
+
+<a href="{{img_full}}" target="_blank" rel="noopener noreferrer">
+  <img src="{{img_thumbnail}}" alt="{{include.alt}}">
+</a>

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="tag-title">
+    <h1> Tag: {{ page.name }}</h1>
+</div>
+<div>
+    {% if site.tags[page.slug] %}
+    <ul>
+        {% for post in site.tags[page.slug] %}
+            <li><a href="{{ post.url }}/">{{ post.title }}</a> ({{ post.date | date_to_string }}) </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>There are no posts for this tag.</p>
+    {% endif %}
+</div>
+<div class="tag-cloud">
+    <h2>Other tags</h2>
+    {% assign tag_list = site.blog_tags | where_exp: "item", "item.slug != page.slug" %}
+    {% for tag in tag_list %}
+        {% capture tag-cloud %} {{tag-cloud}} <a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %} {% endcapture %}
+    {% endfor %}
+    {{ tag-cloud }}
+</div>

@@ -1,0 +1,49 @@
+permalink:           pretty
+
+title:               Automating Guy
+tagline:             Test automation, QA, TestOps - by Michał Krzyżanowski
+url:                 https://automatingguy.com
+paginate:            5
+baseurl:             ""
+description:         Test automation, QA, Dev/TestOps - by Michał Krzyżanowski
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+collections:
+  blog_tags:
+    output: true
+    permalink: /tag/:name/
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+author:
+  name:              Michał Krzyżanowski
+  twitter:           https://twitter.com/automatingguy
+  github:            https://github.com/mkrzyzanowski
+  linkedin:          https://www.linkedin.com/in/m-krzyzanowski
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: blog_tags
+    values:
+      layout: posts_by_tag
+  - scope:
+      path: "public/img"
+    values:
+      image: true
+
+excerpt_separator: <!--more-->
+
+recaptcha: 6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY

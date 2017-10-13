@@ -1,0 +1,1 @@
+# Automating Guy blog repository

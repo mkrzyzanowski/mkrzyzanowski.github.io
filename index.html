@@ -1,0 +1,49 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+    {% if post.tags.size > 0 %}
+      {% capture tags_content %} <span class="fa fa-tag{% if post.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
+      {% for post_tag in post.tags %}
+        {% assign tag = site.blog_tags | where: "slug", post_tag %}
+        {% if tag %}
+          {% assign tag = tag[0] %} 
+          {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+          {% assign tags_content = tags_content_temp %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <div class="post">
+      <h1 class="post-title"><a href="{{ post.url }}"> {{ post.title }} </a></h1>
+      <div class="post-meta">
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+        {% capture content_length %} {{post.content}} {% endcapture %}
+        {% include reading-time.html content=content_length %}
+        <span class="post-tags">{{ tags_content }}</span>
+      </div>
+      {{ post.excerpt }}
+      <a class="read-more" href="{{ post.url }}">Read more &raquo;</a>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
