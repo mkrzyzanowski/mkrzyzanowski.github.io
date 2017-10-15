@@ -1,3 +1,4 @@
 User-agent: *
+Disallow:
 Disallow: /success/
 Sitemap: https://automatingguy.com/sitemap.xml
