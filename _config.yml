@@ -46,7 +46,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "public/img/social/og-image.jpg"
+      image: "public/img/social/image-og.jpg"
 
 excerpt_separator: <!--more-->
 
