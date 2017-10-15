@@ -7,7 +7,7 @@ tags: [selenium, jenkins, infrastructure, docker]
 In the very first post, I would like to tackle a quite common challenge that QA engineers face: setting up a CI job that runs Selenium tests, without any infrastructure in place.
 
 Being either a test automation engineer or a more generally oriented QA/tester is becoming more challenging in the dynamic software development environment we live nowadays. Processes such as Continuous Delivery require fast and reliable test infrastructure and CI jobs that can be scaled and maintained easily. Failure in this part means blocking the whole development as it relies on test automation heavily. 
-It falls on aforementioned roles to provide such setup or at least maintain it and be aware of what is happening behind the scene. Thus, neglecting such knowledge may hinder your capability to be efficient in the nearest future.
+It falls on aforementioned roles to provide such setup or at least maintain it and be aware of what is happening behind the scenes. Thus, neglecting such knowledge may hinder your capability to be efficient in the nearest future.
 
 Key takeaways:
 * You will set up a local Jenkins instance
@@ -27,7 +27,7 @@ Have you ever been bored nearly to death with setting up multiple Jenkins jobs, 
 
 And then having to replicate that setup across numerous environments, ending up as one of the few people (or, oh the horror, the only one) on the team who actually knows what is happening when?
 
-Have you thought sometimes how would some plugin quirks be easily overcome by simply coding that problematic part around?
+Have you thought sometimes how some plugin quirks would be easily overcome by simply coding that problematic part around?
 
 I have been dealing with above problems for years so I was for once really excited to tackle it again in my latest project because, fortunately, the above is not the case with Jenkins anymore - Pipelines come to the rescue!
 
@@ -39,9 +39,9 @@ Moving to a scripted definition isn't the only advantage of Pipelines. The scrip
 
 More information can be found in the official Jenkins docs: [link](https://jenkins.io/doc/book/pipeline/), [here](https://jenkins.io/solutions/pipeline/).
 
-While the name may suggest that they are dedicated only to describing whole pipelines, they also can be used for smaller jobs executing more tactical tasks that we would like to have available to be run on demand, that are not even necessarily part of the whole CI/CD flow. We will such type of job first, to get a better understanding of the actual tool instead of focusing too much on the process.
+While the name may suggest that they are dedicated only to describing whole pipelines, they also can be used for smaller jobs executing more tactical tasks that we would like to have available to be run on demand, that are not even necessarily part of the whole CI/CD flow. We will create such type of job first, to get a better understanding of the actual tool instead of focusing too much on the process.
 
-It is worth mentioning here that Pipeline is still a quite fresh implementation - when I was starting to work with Pipelines I encountered numerous issues, sometimes already documented in Jenkins' JIRA, on the other time requiring from me to dig through different docs, plugins source code etc. to try to understand what was happening with my supposedly correct script. What is really reassuring though is that most of the issues I have encountered were fixed couple versions later - the feature is used exhaustively by many users that test it thoroughly. And to be honest, in case of such complex tool, such user tests are really the only meaningful way to validate it - there are so many different use cases, coupled with various plugins available to Jenkins that it is really hard to predict all possibilities. Also, bear in mind, that not all plugins can be 100% compatible with Pipelines - fortunately, they quickly catch up to the idea of them being used as part of a script and start to provide their own DSL. Just keep in mind that some plugins you were used to using are not actively developed (which brings myriad of other problems) so sometimes it might require finding some other solution, script that plugin part yourself or maybe create a new plugin or commit a fix to the existing one - it is very easy to take from open source community but have you ever considered giving a bit back :)?
+It is worth mentioning here that Pipeline is still quite a fresh implementation - when I was starting to work with Pipelines I encountered numerous issues, sometimes already documented in Jenkins' JIRA, other times requiring from me to dig through different docs, plugins source code etc. to try to understand what was happening with my supposedly correct script. What is really reassuring though is that most of the issues I have encountered were fixed a few versions later - the feature is used exhaustively by many users that test it thoroughly. And to be honest, in case of such complex tool, such user tests are really the only meaningful way to validate it - there are so many different use cases, coupled with various plugins available to Jenkins that it is really hard to predict all possibilities. Also, bear in mind, that not all plugins can be 100% compatible with Pipelines - fortunately, they quickly catch up to the idea of them being used as part of a script and start to provide their own DSL. Just remember that some plugins you were used to using are not actively developed (which brings a myriad of other problems) so sometimes it might require finding some other solution, scripting that plugin part by yourself or maybe create a new plugin or commit a fix to the existing one. It is very easy to take from open source community but have you ever considered giving a bit back :)?
 
 ### Selenium Grid
 
