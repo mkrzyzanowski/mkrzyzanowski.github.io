@@ -43,7 +43,14 @@ defaults:
       path: "public/img"
     values:
       image: true
+  - scope:
+      path: ""
+    values:
+      image: "public/img/social/og-image.jpg"
 
 excerpt_separator: <!--more-->
 
 recaptcha: 6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY
+
+twitter:
+  username: automatingguy
