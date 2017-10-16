@@ -16,7 +16,7 @@ I like to automate not only tests but any repeatable task my team and I encounte
 
 I love to experiment with different approaches, fresh ideas, new tools so whenever that is possible - I try to incorporate them in my daily job. Continuous improvement is always my side goal.
 
-I was a speaker at: [PtaQ meetup](http://ptaq.org/), [PaprzyQarz meetup](http://papryqarz.org/)
+I was a speaker at: [PtaQ meetup](http://ptaq.org/), [PapryQarz meetup](http://papryqarz.org/)
 
 If you would like to talk or need some consultation/training, feel free to [contact me](/contact/).
 
