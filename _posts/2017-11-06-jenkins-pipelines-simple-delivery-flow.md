@@ -565,6 +565,6 @@ I haven't mentioned it in the section related to tests but the repository contai
 
 As you may have noticed, the code in the pipeline requires some love - there is some duplication, no proper error handling, notifications etc. Fear not - we will address these issues in the upcoming posts. Shared Libraries and configuration management are incoming!
 
-Share, tweet, let your friends know - and as always, let me know in case of any comments and questions :).
+As always, let me know in case of any comments or questions :).
 
 Until next time!
