@@ -6,6 +6,7 @@ tags: [jenkins, continuous-delivery]
 
 Continuing the mini-series about Jenkins Pipelines, it is time to take a closer look at how our pipelines can follow the DRY (Don't Repeat Yourself) principle when our scripts are getting bigger and bigger, and we need to share parts of them across multiple projects. In this post, we will explore the concept of Jenkins Shared Libraries - a mechanism that allows keeping bits of our pipeline scripts within reusable units.
 
+<!--more-->
 <div class="message">
     Examples from this post will be based on the code from the other articles in this mini-series. If you haven't had the chance, it might be a good idea to check them out first:
     <ul>
@@ -13,7 +14,6 @@ Continuing the mini-series about Jenkins Pipelines, it is time to take a closer 
         <li><a href="/2017-11-06-jenkins-pipelines-simple-delivery-flow/">Exploring Jenkins Pipelines: a simple delivery flow</a></li>
     </ul>
 </div>
-<!--more-->
 
 ## General information
 
