@@ -183,6 +183,9 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b5b5b5;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -276,8 +279,10 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
+  color: #555555;
+  background-color: #ececec;
+  border-style: solid;
+  border-width: 1px;
 }
 
 
