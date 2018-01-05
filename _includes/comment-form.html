@@ -16,10 +16,10 @@
       <input type="email" id="comment-form-email" name="fields[email]" spellcheck="false" required tabindex="3"/>
     </div>
     <div class="hidden" style="display:none;">
-      <input type="hidden" id="comment-parent" name="fields[replying_to]" value=""> 
+      <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value=""> 
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-      <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
-      <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+      <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+      <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
       <label for="comment-form-location">Leave blank if you are a human</label>
       <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" tabindex="-1"/>
     </div>

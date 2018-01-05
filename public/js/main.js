@@ -26,12 +26,12 @@
         .removeClass("hidden")
         .append("")
         .append($(this).data("name"));
-      $("#comment-parent").val($(this).data("index"));
+      $("#comment-replying-to").val($(this).data("index"));
     });
 
     $("#cancel-comment-reply-link").click(function() {
       $(this).addClass("hidden");
-      $("#comment-parent").val("");
+      $("#comment-replying-to").val("");
     });
 }
 )(jQuery);
