@@ -1,0 +1,44 @@
+{% unless page.comments_locked == true %}
+<div id="respond">
+  <h2 class="section-title">Leave a Comment</h2>
+  <div class="comment-reply-cancel"><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" class="hidden">Cancel reply to </a></div>
+  <form id="comment-form" class="general-form js-form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+    <div>
+      <label for="comment-form-message">Comment (<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> is allowed)</label>
+      <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" spellcheck="true" required tabindex="1"></textarea>
+    </div>
+    <div>
+      <label for="comment-form-name">Name</span></label>
+      <input type="text" id="comment-form-name" name="fields[name]" spellcheck="false" required tabindex="2"/>
+    </div>
+    <div>
+      <label for="comment-form-email">Email (will not be published, used for <a href="https://en.gravatar.com/">Gravatar</a> image and reply notifications)</label>
+      <input type="email" id="comment-form-email" name="fields[email]" spellcheck="false" required tabindex="3"/>
+    </div>
+    <div class="hidden" style="display:none;">
+      <input type="hidden" id="comment-parent" name="fields[replying_to]" value=""> 
+      <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+      <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+      <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+      <label for="comment-form-location">Leave blank if you are a human</label>
+      <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" tabindex="-1"/>
+    </div>
+    <div id='recaptcha' class="g-recaptcha" data-sitekey="{{ site.recaptcha }}" data-callback="captchaComplete" data-size="invisible"></div>
+    <div>
+        <label for="comment-form-reply">
+            <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email" tabindex="4">
+            Let me know about new comments by email.
+        </label>
+        <button type="submit" id="comment-form-submit" tabindex="5">Comment</button>
+    </div>
+    <!-- Start comment form alert messaging -->
+    <div class="hidden js-notice">
+      <span class="js-notice-icon fas fa-3x"></span>
+      <span class="js-notice-text"></span>
+    </div>
+    <!-- End comment form alert messaging -->
+  </form>
+</div>
+{% else %}
+  <p><em>Commenting disabled. In case of any additional questions, feel free to <a href="{{ site.url }}/contact/">contact me</a>.</em></p>
+{% endunless %}

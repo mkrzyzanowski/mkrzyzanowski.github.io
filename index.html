@@ -6,7 +6,7 @@ title: AutomatingGuy Blog
 <div class="posts">
   {% for post in paginator.posts %}
     {% if post.tags.size > 0 %}
-      {% capture tags_content %} <span class="fa fa-tag{% if post.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
+      {% capture tags_content %} <span class="fas fa-tag{% if post.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
       {% for post_tag in post.tags %}
         {% assign tag = site.blog_tags | where: "slug", post_tag %}
         {% if tag %}
@@ -17,12 +17,20 @@ title: AutomatingGuy Blog
       {% endfor %}
     {% endif %}
 
+    {% assign comments_meta = nil %}
+    {% if site.data.comments[post.slug] %}
+      {% assign comments_number = site.data.comments[post.slug].size %}
+      {% capture comments_meta %} <span class="fas fa-comment{% if comments_number > 1 %}s{% endif %}"></span> {% endcapture %}
+      {% capture comments_meta %} <span class="post-comments">{{ comments_meta }}<a href="{{ post.url | relative_url }}#comments">{{ comments_number }} Comment{% if comments_number > 1 %}s{% endif %}</a></span>{% endcapture %}
+    {% endif %}
+
     <div class="post">
       <h1 class="post-title"><a href="{{ post.url }}"> {{ post.title }} </a></h1>
       <div class="post-meta">
-        <span class="post-date">{{ post.date | date_to_string }}</span>
+        <span class="post-date"></span>{{ post.date | date_to_string }}</span>
         {% capture content_length %} {{post.content}} {% endcapture %}
         {% include reading-time.html content=content_length %}
+        {{ comments_meta }}
         <span class="post-tags">{{ tags_content }}</span>
       </div>
       {{ post.excerpt }}
