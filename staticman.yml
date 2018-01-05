@@ -56,7 +56,9 @@ comments:
 
     # (!) ENCRYPTED
     domain: "CznvF+CRUyhtnmPA/jvghiceot8+F4D/yvkDjGFfDSYqVU92W/HUjHXgOMIovu3hvitQ6aHpzRA6BA6JUD0NhtP3xFIi0nHpOeEuVxIM3NLJmtrhLsHAfJ7/bzVEQZwD9pvEEwRVa7iykmeXyNSgWBkq7puHUzYH3oEZvl5tFrk="
-  
+
+  allowedOrigins: ["automatingguy.com"]
+
   recaptcha:
     enabled: true
     siteKey: "6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY"
