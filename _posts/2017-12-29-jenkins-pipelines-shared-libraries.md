@@ -2,7 +2,6 @@
 layout: post
 title: 'Exploring Jenkins Pipelines: Shared Libraries'
 tags: [jenkins, continuous-delivery]
-comments: true
 ---
 
 Continuing the mini-series about Jenkins Pipelines, it is time to take a closer look at how our pipelines can follow the DRY (Don't Repeat Yourself) principle when our scripts are getting bigger and bigger, and we need to share parts of them across multiple projects. In this post, we will explore the concept of Jenkins Shared Libraries - a mechanism that allows keeping bits of our pipeline scripts within reusable units.
