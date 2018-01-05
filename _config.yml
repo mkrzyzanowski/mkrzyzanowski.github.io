@@ -61,7 +61,8 @@ defaults:
 
 excerpt_separator: <!--more-->
 
-recaptcha: 6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY
+recaptcha: "6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY"
+recaptcha_secret: "C2B/39wtFh+539Q7Yxo0bguwWs/UpJHS/wtmBjXOq9Wn9H9OZWBqUt8AUq8iEAqItw0vwNyNHYDyUl5Www0qJnmepRi6M/mAFyZ99Y4BW0kkxtB2pSkUp7VMO1/B+/7HWgp32YRloLBqJapfb3EsZ2si1Ov4ax2CLGO3xmDnzKg="
 
 twitter:
   username: automatingguy

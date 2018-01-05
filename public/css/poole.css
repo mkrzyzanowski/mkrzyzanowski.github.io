@@ -520,7 +520,7 @@ a.pagination-item:hover {
   font-size: 0.8125rem;
 }
 
-.btn-disabled {
+.disabled {
   pointer-events: none;
   box-shadow: none;
   cursor: not-allowed;

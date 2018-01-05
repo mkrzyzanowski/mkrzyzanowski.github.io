@@ -2,7 +2,7 @@
 <div id="respond">
   <h2 class="section-title">Leave a Comment</h2>
   <div class="comment-reply-cancel"><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" class="hidden">Cancel reply to </a></div>
-  <form id="comment-form" class="general-form js-form form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+  <form id="comment-form" class="general-form js-form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
     <div>
       <label for="comment-form-message">Comment (<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> is allowed)</label>
       <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" spellcheck="true" required tabindex="1"></textarea>
@@ -23,6 +23,7 @@
       <label for="comment-form-location">Leave blank if you are a human</label>
       <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" tabindex="-1"/>
     </div>
+    <div id='recaptcha' class="g-recaptcha" data-sitekey="{{ site.recaptcha }}" data-callback="captchaComplete" data-size="invisible"></div>
     <div>
         <label for="comment-form-reply">
             <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email" tabindex="4">
