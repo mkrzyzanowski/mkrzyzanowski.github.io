@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.tags.size > 0 %}
-  {% capture tags_content %} <span class="fa fa-tag{% if page.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
+  {% capture tags_content %} <span class="fas fa-tag{% if page.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
   {% for post_tag in page.tags %}
     {% assign tag = site.blog_tags | where: "slug", post_tag %}
     {% if tag %}
@@ -14,16 +14,27 @@ layout: default
   {% endfor %}
 {% endif %}
 
+{% if site.data.comments[page.slug] %}
+  {% assign comments_number = site.data.comments[page.slug].size %}
+  {% capture comments_meta %} <span class="fas fa-comment{% if comments_number > 1 %}s{% endif %}"></span> {% endcapture %}
+  {% capture comments_meta %} <span class="post-comments">{{ comments_meta }}<a href="{{ page.url | relative_url }}#comments">{{ comments_number }} Comment{% if comments_number > 1 %}s{% endif %}</a></span>{% endcapture %}
+{% endif %}
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-meta">
     <span class="post-date">{{ page.date | date_to_string }}</span>
     {% capture content_length %} {{content}} {% endcapture %}
-    {% include reading-time.html content=content_length %}    
-    <span class="post-tags">{{ tags_content }}</span>  
+    {% include reading-time.html content=content_length %}
+    {{ comments_meta }}
+    <span class="post-tags">{{ tags_content }}</span>
   </div>
   {{ content }}
 </div>
+
+{% if page.comments == true %}
+  {% include comments.html %}
+{% endif %}
 
 <div class="related">
   <h2>Other Posts</h2>

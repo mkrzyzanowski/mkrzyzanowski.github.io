@@ -7,6 +7,10 @@ paginate:            5
 baseurl:             ""
 description:         Test automation, QA, Dev/TestOps - by Michał Krzyżanowski
 
+repository: mkrzyzanowski/mkrzyzanowski.github.io
+staticman:
+  branch: master
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -48,6 +52,12 @@ defaults:
       path: ""
     values:
       image: "public/img/social/image-og.jpg"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      comments: true
+
 
 excerpt_separator: <!--more-->
 
@@ -55,3 +65,7 @@ recaptcha: 6LcfTTIUAAAAAB-6rgzIg4p62P8kbtiLElVF7dQY
 
 twitter:
   username: automatingguy
+
+exclude:
+  - dev
+  - README.md
