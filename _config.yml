@@ -56,7 +56,7 @@ defaults:
       path: "_posts"
       type: "posts"
     values:
-      comments: false
+      comments: true
 
 
 excerpt_separator: <!--more-->
