@@ -32,10 +32,6 @@ layout: default
   {{ content }}
 </div>
 
-{% if page.comments == true %}
-  {% include comments.html %}
-{% endif %}
-
 <div class="related">
   <h2>Other Posts</h2>
   <ul class="related-posts">
@@ -51,3 +47,7 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+{% if page.comments == true %}
+{% include comments.html %}
+{% endif %}
