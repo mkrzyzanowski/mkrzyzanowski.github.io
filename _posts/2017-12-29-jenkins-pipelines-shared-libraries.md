@@ -10,8 +10,8 @@ Continuing the mini-series about Jenkins Pipelines, it is time to take a closer 
 <div class="message">
     Examples from this post will be based on the code from the other articles in this mini-series. If you haven't had the chance, it might be a good idea to check them out first:
     <ul>
-        <li><a href="/2017-10-13-selenium-tests-with-jenkins-and-zalenium/">Running Selenium tests with Jenkins Pipelines and Zalenium</a></li>
-        <li><a href="/2017-11-06-jenkins-pipelines-simple-delivery-flow/">Exploring Jenkins Pipelines: a simple delivery flow</a></li>
+        <li><a href="/2017/10/13/selenium-tests-with-jenkins-and-zalenium/">Running Selenium tests with Jenkins Pipelines and Zalenium</a></li>
+        <li><a href="/2017/11/06/jenkins-pipelines-simple-delivery-flow/">Exploring Jenkins Pipelines: a simple delivery flow</a></li>
     </ul>
 </div>
 
