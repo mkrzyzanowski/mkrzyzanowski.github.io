@@ -546,3 +546,7 @@ a.pagination-item:hover {
 .comment-reply-cancel {
   padding-bottom: 0.5rem;
 }
+
+#comment-form .grecaptcha-badge {
+  margin: 10px 0px 5px 0px;
+}
