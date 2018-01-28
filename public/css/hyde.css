@@ -92,7 +92,7 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   
 }
 .sidebar-nav-item {
@@ -125,6 +125,14 @@ a.sidebar-nav-item:focus {
 
 .sidebar .copyright p {
   font-size: 0.75rem;
+}
+
+.sidebar .copyright {
+  padding-top: 1rem;
+}
+
+.sidebar hr {
+  margin: 1rem 0rem;
 }
 
 /* Sticky sidebar
