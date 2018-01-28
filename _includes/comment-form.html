@@ -23,13 +23,13 @@
       <label for="comment-form-location">Leave blank if you are a human</label>
       <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" tabindex="-1"/>
     </div>
-    <div id='recaptcha' class="g-recaptcha" data-sitekey="{{ site.recaptcha }}" data-callback="captchaComplete" data-size="invisible"></div>
     <div>
-        <label for="comment-form-reply">
-            <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email" tabindex="4">
-            Let me know about new comments by email.
-        </label>
-        <button type="submit" id="comment-form-submit" tabindex="5">Comment</button>
+      <label for="comment-form-reply">
+        <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email" tabindex="4">
+        Let me know about new comments by email.
+      </label>
+      <div id='recaptcha' class="g-recaptcha" data-sitekey="{{ site.recaptcha }}" data-callback="captchaComplete" data-size="invisible" data-badge="inline"></div>
+      <button type="submit" id="comment-form-submit" tabindex="5">Comment</button>
     </div>
     <!-- Start comment form alert messaging -->
     <div class="hidden js-notice">
