@@ -293,14 +293,15 @@ a.sidebar-nav-item:focus {
   margin-top: 2.5rem;
 }
 
+/* Forms */
 
-.contact-form {
+.general-form {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 1.2rem;
 }
 
-.contact-form * {
+.general-form * {
   font-size: 0.875rem;
 }
 
@@ -314,13 +315,19 @@ input, textarea {
   box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  display: inline;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
 textarea {
   min-height: 11rem;
   min-width: 100%;
   max-width: 100%;
 }
 
-.contact-form button {
+.general-form button {
   width: 100%;
   background-color: #000;
   color: white;
@@ -331,6 +338,6 @@ textarea {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.general-form button:hover {
   background-color: #383737;
 }
