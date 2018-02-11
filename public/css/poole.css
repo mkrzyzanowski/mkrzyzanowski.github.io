@@ -452,8 +452,11 @@ a.pagination-item:hover {
   }
 }
 
-/* Comments */
+div.newsletter {
+  font-size: 0.8rem;
+}
 
+/* Comments */
 .comments .section-title:before {
   display: block;
   width: 5rem;
