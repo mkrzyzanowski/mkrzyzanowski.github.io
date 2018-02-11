@@ -18,7 +18,8 @@ The poll I mentioned is this one:
 
 It was really thought-provoking in my case. Not only it made me stop and think about the tool choices around test automation tools, but also made me take a closer look at these Selenium competitors mentioned in the poll. Unfortunately, I ended up with such a long rant that I decided the second part deserves a separate post :).
 
--
+## About misconceptions
+
 At the moment, a part of my job involves consulting the projects in the company regarding test automation. It includes helping future ones to pick appropriate toolset. This week, I had a few discussions related to that, and that’s why it was a great exercise to revisit my thought and decision-making process around it: what criteria are worth to consider and what people should look after when doing the same. Additionally, at the moment I am reviewing the state of automation in the company, and I get a lot of opinions from people using different tools, which shows various perspectives on the matter.
 
 By the way, I will not discuss budget issues here and will focus mostly on the impact on team experience. Picking tools versus the available funds is a topic for another discussion. I will focus on free, mostly OSS frameworks here. I also assume that team has free will when it comes to choosing the toolset. Just like the budget, I won't discuss a situation where you have to convince the management or the client.
@@ -89,6 +90,7 @@ Or maybe your application under test or the underlying infrastructure is terribl
 
 There are tons of articles, blog posts, podcasts, videos, courses and whatever other kinds of knowledge sharing exist that you can use to improve your approach to test automation. Take care of it first, prepare an early form of a strategy you would like to establish in the project, then choose your tools.
 
+## Things to take into consideration
 
 What other factors to include when picking your automation tools?
 
@@ -110,6 +112,7 @@ What about the processes, the development approach of the project? Your organiza
 
 In the end, there is always the innovation part. Even when you have established a proper culture around test automation, everyone is comfortable using your standard toolset, then comes a time while starting a new project you feel this urge to try something different this time. To innovate. To change the status quo. Or just for shits and giggles - having fun when working will make you a happy person. Perhaps that can also be the way to enliven your team and turn their eyes to test automation?
 
+## Summary
 
 Summing the above rant up, when picking test automation toolset - like with anything testing-related - understand your context: 
 - Needs: what kind of tests will you write the most? How many of them? Do you expect a lot of unknowns and a need for customization?
@@ -123,7 +126,7 @@ All in all, when advising people and helping them pick a framework, do not make 
 
 Remember, there are no silver bullets. You saying “XYZ IS THE BEST, USE IT!” won’t change that.
 
-
+<hr/>
 As I mentioned at the beginning, this is the first post on this topic - the next one will be a closer look at Selenium competitors mentioned in Katrina's poll.
 
 Till next time!
