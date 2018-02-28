@@ -47,9 +47,9 @@ This talk surfaced a great feat of test:fest - thanks to the fact that speakers 
 
 The last but not least was [Tomek Dubikowski](http://testfest.pl/en/speaker/tomasz-dubikowski/), who won the award for the best presentation. For the 4th time - hats off! It was a real pleasure to listen to the brand new show about 'Seven deadlier sins of quality'. When the talk is available online, do yourself a favor and watch it. It was great not only because Tomek is a fantastic speaker. The things he mentions are not some cool, fancy techniques or tools. They are the less techy aspects of software development that we often do not reflect upon because we do not have time for that in the busy world we work in. And they are universal, no matter what kind of development you are involved in.
 
-Summing it up, I had a blast, met many fantastic people, discussed a lot about different aspects of quality and brought many things to think about.
+Summing it up, I had a blast, met many fantastic people, discussed a lot about different aspects of quality and brought back many things to think about.
 
-Thanks again, test:fest organizers, volunteers and attendees. Hopefully see you again next year! Although it might be easier to submit a talk to get there... ;).
+Thanks again, test:fest organizers, volunteers, sponsors and attendees. Hopefully see you again next year! Although it might be easier to submit a talk to get there... ;).
 
 ## Other summaries
 
