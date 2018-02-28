@@ -41,7 +41,7 @@ You can expect a post about this topic in the nearest future, as it pains me how
 
 [Joanna Jeziorska](http://testfest.pl/en/speaker/joanna-jeziorska/) was next with her presentation about psychological aspects of exploratory testing. I loved the analogies to Bear Grylls and the way she presented - she engaged the audience and made us interact with each other. She showed how involuntary and intentional thinking maps to exploration in testing. Perhaps for most of the seasoned exploratory testers, the talk did not include anything revolutionary but brought up essential basics of exploratory testing, which we often forget about. The presentation is definitely worth watching when it's going to be available online.
 
-This talk surfaced a great feat of test:fest - thanks to the fact that speakers have an opportunity to participate in workshops, really raises the bar in comparison to other events.
+This talk surfaced a great feat of test:fest - the fact that speakers have an opportunity to participate in workshops, really raises the bar in comparison to other events.
 
 [Mateusz Rumian](http://testfest.pl/en/speaker/mateusz-rumian/) and [Adrian Gonciarz](http://testfest.pl/en/speaker/adrian-gonciarz/) gave a technical talk about how they approached automating network generation. I would appreciate more context of the software-under-test, nevertheless it was interesting to hear something different from the usual stuff I do :).
 
