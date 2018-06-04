@@ -1,0 +1,11 @@
+_id: 9a358760-6828-11e8-97d3-757a25387548
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: "Hi Michal,\r\n\r\nOne use case for using dynamic library is if you want to use another custom lib in your lib. Using the @LIbrary annotation doesn't seem to work for that use case. (Jenkins tells me the lib isn't found) when it clearly is there at runtime."
+name: Meeech
+email: 43d72f01069b135779118e8cccc518d7
+replying_to: ''
+hidden: ''
+date: '2018-06-04T18:53:43.500Z'
+tags:
+  - comment-subscription
+timestamp: 1528138423
