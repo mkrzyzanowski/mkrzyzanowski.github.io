@@ -1,0 +1,8 @@
+_id: 623e4560-87a2-11e8-a68d-271aceea16cb
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: "Hey really useful writeup thanks! I Have question you might be able to give me some insight on as I haven't been able to find a clear answer and your post is really only thing that touched on it even slightly. \r\n\r\nI'm struggling to find information on what sort of things should go in var as global variables and what should be going in src. I understand general differences between the two but everywhere Ive seen no consistency in what groovy scripts are put in src, and what are put in var."
+name: AndrewK
+email: c54f6d053f1cddfe009c7fcb41705f4c
+replying_to: ''
+hidden: ''
+date: '2018-07-14T20:13:34.128Z'
