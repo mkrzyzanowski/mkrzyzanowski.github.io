@@ -19,7 +19,7 @@ Disclaimer: it's a 'first encounter' post - I simply figure stuff out on the go,
 <!--more-->
 
 ## Background
-Anyone that has ever set up a single Jenkins instance (e.g. when trying out Pipelines following one of the [previous posts]()), have gone through its setup process. You probably are familiar with seeing following screens:
+Anyone that has ever set up a single Jenkins instance (e.g. when trying out Pipelines following one of the [previous posts](/2017/10/13/selenium-tests-with-jenkins-and-zalenium/)), have gone through its setup process. You probably are familiar with seeing following screens:
 
 {% include image.html img="/public/img/posts/jcasc-first-encounter/1-jenkins-setup-wizard-secret.jpg" alt="Jenkins setup wizard - providing administrator's secret" %}
 {% include image.html img="/public/img/posts/jcasc-first-encounter/2-jenkins-setup-wizard-plugins-choice.jpg" alt="Jenkins setup wizard - choosing plugins" %}
