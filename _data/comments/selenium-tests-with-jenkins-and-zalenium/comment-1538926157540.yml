@@ -1,0 +1,8 @@
+_id: c0daa970-ca45-11e8-9c8a-93ccc8073258
+_parent: 'https://automatingguy.com/2017/10/13/selenium-tests-with-jenkins-and-zalenium/'
+message: "how to you work with in a parallel system of like 50 nodes ? I mean you really need a powerful jenkins node to be able to run that many selenium nodes .\r\n\r\nSo this is why I didnt chose grid .\r\n\r\nWe implemented a pipeline to run parallel containers and the job is done by our groovy code.\r\n\r\nwe basically export some huge arrays with cucumber tags . A tag can run one or more than one cucumber features.\r\n\r\nWe allocate one docker container for a tag. and we run in parallel those containers . Now we use 5 powerful jenkins nodes . Each can carry 10 containers in parallel .Performance wise is really good , also we dont get connection issues and we really can rely on our results as we run at least 50000 -100000 UI tests in a day . Tests which of course are triggered by our pipeline. As browser we build our own docker image with chrome and chromedriver and we run headless . Also for firefox recently works pretty well with the new headless capability. \r\n\r\nGrid is premature and has memory leak issues to be used in a CI environment where you do 4-5 production deployments a day/ project.\r\n\r\nYou might ask how do I get the reports merged from all those containers. Well magic happens , we have a pretty heavy groovy code behind that as well also for the nice pie charts we use reportportal.io . Its a great free solution , and you can have as many projects as you want."
+name: skaliber
+email: 8a72364e2bd93d6c04ecb491d7d98d99
+replying_to: ''
+hidden: ''
+date: '2018-10-07T15:29:17.539Z'
