@@ -1,0 +1,8 @@
+_id: 90882740-cdef-11e8-9467-8537e44b2659
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: "Hi,\r\n\r\nI just look at library, and your post is really clear and didactic.\r\nIf I correctly understand, it seems that the library must be at the root of a git repo.\r\nWorking in a complex / constrained environment, I need to store my library in a (let's say) `continuousIntegration` directory which is not at the root level.\r\nI don't understand (can't find a way in the configuration page) how I can achieve that. I don't see any possibility to enter a directory path.\r\n\r\nIf I am wrong, any explanation would be appreciated. If I am right any suggestion would be welcomed.\r\n\r\nThanks for your help\r\nBest Regards\r\nJ-L"
+name: Jean-Luc
+email: bf953f76417e9c819e015f2eca413840
+replying_to: ''
+hidden: ''
+date: '2018-10-12T07:22:24.406Z'
