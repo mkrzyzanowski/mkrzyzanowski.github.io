@@ -553,3 +553,7 @@ div.newsletter {
 #comment-form .grecaptcha-badge {
   margin: 10px 0px 5px 0px;
 }
+
+.twitter-tweet {
+  margin: 20px auto;
+}
