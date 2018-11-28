@@ -1,0 +1,16 @@
+_id: ee9a5a70-c277-11e8-94f7-ed09f2515ddf
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: >-
+  Have you found a good way to dynamically load a branch of said global
+  libraries without having to use '@branch-name' at the end? I have multiple
+  people who might fork/branch the global libs and it sort of seems like a
+  pain... short of everyone adding their own global lib configuration or
+  constantly updating their @Library calls (... and then remembering to put it
+  back before submitting their PR's...) I'm not really sure how you handle this
+  gracefully. Loading libs at runtime is a non-starter, need the classpath and
+  everything in src/.
+name: Alexa
+email: aed5526a20a2d75d6bd1718657d1e06f
+replying_to: ''
+hidden: ''
+date: '2018-09-27T17:08:19.928Z'
