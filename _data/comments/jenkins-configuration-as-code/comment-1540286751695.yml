@@ -1,0 +1,8 @@
+_id: a224f8c0-d6a5-11e8-9cf8-c9b6ddd6c0e8
+_parent: 'https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/'
+message: "Hi, I'm trying to follow your article and created the YAML file. However when I add the path in the Configuration as Code page, it says \"Configuration cannot be applied. File or URL cannot be parsed or do not exist.\"\r\n\r\nI suspect this is due to Jenkins running in a docker and my file was created from my OS (Ubuntu)?\r\n\r\nHow do I specify the path in the \"Configuration as Code\" page?\r\nThanks."
+name: Daniel
+email: 8bb5766fff8ed3ee300aeb02129609df
+replying_to: ''
+hidden: ''
+date: '2018-10-23T09:25:51.694Z'
