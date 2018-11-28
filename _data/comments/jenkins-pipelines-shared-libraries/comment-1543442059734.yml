@@ -1,0 +1,8 @@
+_id: 284e4590-f358-11e8-9a9a-47a690f58ec4
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: "Yeah, unfortunately the Shared Libraries and their structure is a bit strict :(.\r\nI guess this hack might help in your situation: [link](https://stackoverflow.com/a/47892822). Otherwise, you could try to forfeit the Shared Library concept and load Groovy files in your Jenkinsfiles from a folder, as shown here: [link](https://stackoverflow.com/a/38108449)."
+name: AutomatingGuy
+email: ae37a4ed4a7e70f950b306227e92253c
+replying_to: '4'
+hidden: ''
+date: '2018-11-28T21:54:19.733Z'
