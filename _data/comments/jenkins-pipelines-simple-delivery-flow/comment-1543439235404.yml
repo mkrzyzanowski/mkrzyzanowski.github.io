@@ -1,0 +1,11 @@
+_id: 94e66db0-f351-11e8-9a9a-47a690f58ec4
+_parent: 'https://automatingguy.com/2017/11/06/jenkins-pipelines-simple-delivery-flow/'
+message: >-
+  They are basically an external repository with a specific structure (see:
+  https://jenkins.io/doc/book/pipeline/shared-libraries/) and you configure them
+  in Jenkins' admin panel.
+name: AutomatingGuy
+email: ae37a4ed4a7e70f950b306227e92253c
+replying_to: '2'
+hidden: ''
+date: '2018-11-28T21:07:15.403Z'
