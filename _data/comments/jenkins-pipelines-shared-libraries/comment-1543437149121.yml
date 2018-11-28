@@ -1,6 +1,6 @@
 _id: b9624790-f34c-11e8-9a9a-47a690f58ec4
 _parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
-message: "So far I've been living with the same pain :/. It's a hidden advertisement of trunk-based development :D.\r\n\r\nBut right now with JCasC here, it might be worth to keep the branch info in the library configuration, swap it in the config file (see my post about JCasC: https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/), test it locally on a Jenkins instance configured in a universal way, then merge the working stuff to master! This way, you can simply reference the library with `@Library('your-lib') :)."
+message: "So far I've been living with the same pain :/. It's a hidden advertisement of trunk-based development :D.\r\n\r\nBut right now with JCasC here, it might be worth to keep the branch info in the library configuration, swap it in the config file (see my post about JCasC: https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/), test it locally on a Jenkins instance configured in a universal way, then merge the working stuff to master! This way, you can simply reference the library with `@Library('your-lib')` :)."
 name: AutomatingGuy
 email: ae37a4ed4a7e70f950b306227e92253c
 replying_to: '3'
