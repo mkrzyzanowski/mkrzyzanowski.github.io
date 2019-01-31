@@ -1,0 +1,12 @@
+_id: 1cd67df0-2593-11e9-a796-41e91da33698
+_parent: 'https://automatingguy.com/2017/10/13/selenium-tests-with-jenkins-and-zalenium/'
+message: >-
+  I can't understand, why Zalenium is auto-scalable. It is limited by resources
+  of host, where you run in. Grid is not ideal tool, but you can add new
+  resources when you want, during some tests is running. But how can you
+  increase num of instances on selenium.
+name: a_baradulkin
+email: 0b16dc01a0cf8c71063602475668ed2f
+replying_to: ''
+hidden: ''
+date: '2019-01-31T20:02:18.992Z'
