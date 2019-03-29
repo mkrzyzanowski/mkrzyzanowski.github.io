@@ -1,0 +1,10 @@
+_id: 29dbcd90-5246-11e9-9680-0534ab787a77
+_parent: 'https://automatingguy.com/2017/10/13/selenium-tests-with-jenkins-and-zalenium/'
+message: >-
+  where do the tests run from jenkins? Physical machine? VM? does the machine
+  where tests run need to have any test tool component?
+name: mohammod
+email: 1af83fe77b3b850d9aabc85f8c7cc1d6
+replying_to: ''
+hidden: ''
+date: '2019-03-29T17:14:51.942Z'
