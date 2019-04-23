@@ -1,0 +1,11 @@
+_id: 8bcffb80-65ff-11e9-8ae2-25d8c193a75f
+_parent: 'https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/'
+message: >-
+  The explanation is great, but how do I use GitLab webhooks to detect the
+  version changes.This is automated in terms of Docker and Environment variables
+  but how do I use a version control system like Git and GitLab
+name: Yash
+email: 9a651350c485f6543e236478db13508b
+replying_to: ''
+hidden: ''
+date: '2019-04-23T19:39:45.273Z'
