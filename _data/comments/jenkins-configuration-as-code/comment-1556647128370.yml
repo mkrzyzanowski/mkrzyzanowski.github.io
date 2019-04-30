@@ -1,0 +1,15 @@
+_id: 9a7d7320-6b71-11e9-b841-fb6695c7f382
+_parent: 'https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/'
+message: >-
+  Hey just wanted to add a little note for configuring tools, something I
+  stumbled across trying to set up MSBuild. The labels from the GUI themselves
+  are not always super useful in determining what you should put in your .yaml
+  file, but you can usually get a pretty good idea by examining the form fields
+  themselves using Chrome developer tools or whatever for your preferred
+  browser. This doesn't always work, but often the option name for casc will be
+  the same as the name of the form field.
+name: turk mcgurk
+email: 0e0d3cdbdf874cf38f3f14fd98a4de36
+replying_to: ''
+hidden: ''
+date: '2019-04-30T17:58:48.369Z'
