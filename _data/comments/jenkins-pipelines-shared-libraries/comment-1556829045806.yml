@@ -1,0 +1,8 @@
+_id: 293db270-6d19-11e9-939d-8fa9d7745ddf
+_parent: 'https://automatingguy.com/2017/12/29/jenkins-pipelines-shared-libraries/'
+message: "Have you found a way to use `job-dsl` to configure the shared library?  I'm trying to set this up shared libraries for a folder and cannot get it to work because of the `Discover branch` trait.\r\n\r\n```\r\nfolder('my-apps') {\r\n  properties {\r\n    folderLibraries {\r\n      libraries {\r\n        libraryConfiguration {\r\n          name('shared-library')\r\n          defaultVersion('master')\r\n          implicit(false)\r\n          allowVersionOverride(true)\r\n          includeInChangesets(true)\r\n          retriever {\r\n            scmSourceRetriever {\r\n              scm {\r\n                remote('ssh://git@github.com/org/shared-libraries.git')\r\n                credentialsId('some-credentials')\r\n                configure { node ->\r\n                  traits << 'jenkins.plugins.git.traits.BranchDiscoveryTrait'()\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n```"
+name: nocode
+email: 51e52835b5b6c17bd4ab48c5351e1322
+replying_to: ''
+hidden: ''
+date: '2019-05-02T20:30:45.805Z'
