@@ -1,0 +1,8 @@
+_id: 07c47030-87b7-11e9-881b-59dc537dbfe4
+_parent: 'https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/'
+message: "Why is JCasC forcing to use Docker to spin up Jenkins instance. How can we configure and spin up an entire Jenkins server instead of Jenkins docker container?\r\n\r\nQuick response is appreciated."
+name: Yashaswini
+email: 68a21aa1763887c62303cfb52e282d06
+replying_to: ''
+hidden: ''
+date: '2019-06-05T17:26:19.361Z'
