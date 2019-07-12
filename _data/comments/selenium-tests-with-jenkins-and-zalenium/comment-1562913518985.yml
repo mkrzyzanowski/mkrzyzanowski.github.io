@@ -1,0 +1,13 @@
+_id: ae737c80-a46f-11e9-9d94-2f44cf07542e
+_parent: 'https://automatingguy.com/2017/10/13/selenium-tests-with-jenkins-and-zalenium/'
+message: >-
+  I disagree regarding the declarative.  I sort of feel like Jenkins wants to
+  move over to declarative.  That is to say that declarative is new and is
+  missing some features. We wrote our entire pipeline in declarative without
+  using one scrip tag and it wasn't easy. Since we feel that starting with a
+  script is sort of going against the flow, we went this route.
+name: Baruch
+email: 8a4f4e5f2f1f8c6e5853e75574cc7403
+replying_to: ''
+hidden: ''
+date: '2019-07-12T06:38:38.984Z'
