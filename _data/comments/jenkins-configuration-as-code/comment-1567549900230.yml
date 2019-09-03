@@ -1,0 +1,8 @@
+_id: 990d6c70-ce9a-11e9-a4ef-87146b68ccad
+_parent: 'https://automatingguy.com/2018/09/25/jenkins-configuration-as-code/'
+message: "Thank you for the useful tutorial. But at the end of this tutorial, I do get jenkins up with plugins but job doesn't get created ? \r\n\r\nDo we need to add RUN command to run the yaml job file ? or something or sorts to make sure that yaml is used to create jenkins job ?"
+name: Jay
+email: 375a62b0ccdeecea1cd5c31b7d37d7a6
+replying_to: ''
+hidden: ''
+date: '2019-09-03T22:31:40.230Z'
